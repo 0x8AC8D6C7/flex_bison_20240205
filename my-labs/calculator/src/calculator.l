@@ -1,5 +1,5 @@
 %{
-    #include "demo.tab.h"
+    #include "calculator.tab.h"
 %}
 %%
 "+" {return ADD;}
