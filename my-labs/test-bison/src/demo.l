@@ -7,6 +7,9 @@
 "*" {return MUL;}
 "/" {return DIV;}
 "|" {return ABS;}
+"(" {return OP;/*Open Parenthesis*/}
+")" {return CP;/*Close Parenthesis*/}
+"//".* {/*ignore comments*/}
 [0-9]+ {yylval = atoi(yytext); return NUMBER;}
 \n {return EOL;}
 [ \t] { /* ignore whitespace */ }
