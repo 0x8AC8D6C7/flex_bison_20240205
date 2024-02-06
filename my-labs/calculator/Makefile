@@ -1,5 +1,5 @@
 ./build/target/calculator: ./src/calculator.l ./src/calculator.y
-	rm -r ./build
+	rm -r -f ./build
 	mkdir build
 	mkdir ./build/target
 	bison -d -o ./build/calculator.tab.c ./src/calculator.y
