@@ -1,5 +1,14 @@
 %{
     #include "stdio.h"
+
+    void output(int result) {
+        printf("decimal: = %d, heximal:= ", result);
+        /**"%#hX" is used to output an unsigned number, which requires additional processing
+          *when the result is negative. Although signed hexadecimal numbers don't make much sense
+          */
+        if(result < 0) printf("-%#hX\n",-result);
+        else printf("%#hX\n",result);
+    }
 %}
 
 %token NUMBER
@@ -10,7 +19,8 @@
 %%
 
 calclist: /*notihing*/
- | calclist exp EOL { printf("= %d\n", $2); }
+ | calclist exp EOL { output($2); }
+ | calclist EOL {/*do nothing*/}
  ;
 
 exp: factor
