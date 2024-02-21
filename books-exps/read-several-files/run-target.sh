@@ -1,0 +1,1 @@
+./build/target/read-file ./test-files/to-read-1.txt ./test-files/to-read-2.txt ./test-files/to-read-3.txt
