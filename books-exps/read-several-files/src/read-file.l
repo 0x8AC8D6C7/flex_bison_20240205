@@ -29,6 +29,7 @@ int main(int argc, char** argv) {
         
         if(!f) {
             perror(argv[i]);
+            printf("Error code: %d\n", errno);
             return (1);
         }
         yyrestart(f);
