@@ -1,5 +1,5 @@
 # Build
-Ensure that you are under the directory 'calculator/', then run:
+Ensure that you are under the directory 'include-file/', then run:
 ```bash
 make
 ```
