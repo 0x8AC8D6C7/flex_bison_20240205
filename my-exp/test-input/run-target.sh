@@ -1,1 +1,0 @@
-./build/target/test-input ./test-files/test-file.txt
